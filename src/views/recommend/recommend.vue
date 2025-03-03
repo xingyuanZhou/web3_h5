@@ -6,5 +6,5 @@
   </div>
 </template>
 <style scoped lang="scss">
-@import "@/views/recommend/recommend";
+@use "@/views/recommend/recommend";
 </style>

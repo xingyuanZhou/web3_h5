@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import {getWeb3} from '@/js/web3';
 import Tabbar from "../components/Tabbar/Tabbar.vue";
 
 const router = createRouter({
@@ -32,8 +31,6 @@ const router = createRouter({
 });
 
 router.beforeEach(async (to, from, next) => {
-  let obj = await getWeb3();
-  if (!obj.web3) return false;
   next()
 })
 export default router;

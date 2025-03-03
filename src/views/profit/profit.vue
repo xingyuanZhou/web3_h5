@@ -6,5 +6,5 @@
   </div>
 </template>
 <style scoped lang="scss">
-@import "@/views/profit/profit";
+@use "@/views/profit/profit";
 </style>

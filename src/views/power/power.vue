@@ -6,5 +6,5 @@
   </div>
 </template>
 <style scoped lang="scss">
-@import "@/views/power/power";
+@use "@/views/power/power";
 </style>
