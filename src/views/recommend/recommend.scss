@@ -1,0 +1,11 @@
+.recommend {
+  width: 375px;
+  height: calc(100vh - 87px);
+  background-color: #191614;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  overflow: scroll;
+  color: #fff;
+}
