@@ -1,0 +1,53 @@
+{
+  "hash": "176eaff9",
+  "browserHash": "1eb570ba",
+  "optimized": {
+    "vue": {
+      "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "f5a54acf",
+      "needsInterop": false
+    },
+    "pinia": {
+      "src": "../../node_modules/pinia/dist/pinia.mjs",
+      "file": "pinia.js",
+      "fileHash": "537d2ddf",
+      "needsInterop": false
+    },
+    "vue3-qr-reader": {
+      "src": "../../node_modules/vue3-qr-reader/dist/vue3-qr-reader.common.js",
+      "file": "vue3-qr-reader.js",
+      "fileHash": "c2a0cb06",
+      "needsInterop": true
+    },
+    "amfe-flexible": {
+      "src": "../../node_modules/amfe-flexible/index.js",
+      "file": "amfe-flexible.js",
+      "fileHash": "b7e4db91",
+      "needsInterop": true
+    },
+    "vue-router": {
+      "src": "../../node_modules/vue-router/dist/vue-router.mjs",
+      "file": "vue-router.js",
+      "fileHash": "d73ddd69",
+      "needsInterop": false
+    },
+    "vant": {
+      "src": "../../node_modules/vant/es/index.mjs",
+      "file": "vant.js",
+      "fileHash": "fb00a2a2",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-3GOOGFKQ": {
+      "file": "chunk-3GOOGFKQ.js"
+    },
+    "chunk-ENX2QPTA": {
+      "file": "chunk-ENX2QPTA.js"
+    },
+    "chunk-FH2TP6J3": {
+      "file": "chunk-FH2TP6J3.js"
+    }
+  }
+}
