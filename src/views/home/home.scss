@@ -1,11 +1,168 @@
+@import "@/assets/styles/theme.scss";
+
+p{
+  margin: 0;
+}
+
 .home {
+  font-family: "PingFang SC";
   width: 375px;
   height: calc(100vh - 87px);
   background-color: #191614;
   display: flex;
-  justify-content: center;
   align-content: flex-start;
   flex-wrap: wrap;
   overflow: scroll;
   color: #fff;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  .home-market{
+    .market-trend{
+      .market-info{
+        display: flex;
+        .info-l{
+          flex: 1;
+          .title{
+            display: flex;
+            align-items: center;
+            color: $primary-50;
+            font-size: 16px;
+            img{
+              width: 36px;
+              height: 20px;
+              margin-right: 8px;
+            }
+          }
+          .sum{
+            color: $secondary-500;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 36px;
+            padding: 4px 0;
+          }
+          .des{
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            p{
+              &:first-child{
+                font-size: 14px;
+                color: $primary-50;
+              }
+              &:last-child{
+                font-size: 11px;
+                color: $secondary-200;
+                padding: 2px 4px;
+                background: $secondary-900;
+                border-radius: 40px;
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+        .info-r{
+          flex: 1;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-wrap: wrap;
+          div{
+            //padding-left: 14px;
+          }
+          .title{
+            font-size: 10px;
+            color: $primary-800;
+          }
+          .sum{
+            padding-top: 4px;
+            font-size: 11px;
+            color: $primary-50;
+          }
+        }
+      }
+      .market-chart{
+        padding-top: 14px;
+        height: 216px;
+      }
+    }
+    .market-cell{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title{
+        font-size: 12px;
+        font-weight: 400;
+        color: $primary-700;
+        img{
+          width: 22px;
+          height: 22px;
+          vertical-align: middle;
+          border-radius: 40px;
+          background: $primary-1100;
+          gap: 8px;
+        }
+      }
+      .num{
+        font-size: 14px;
+        font-weight: 600;
+        color: $primary-200;
+      }
+    }
+    .market-stat{
+      text-align: center;
+      img{
+        width: 84px;
+        height: 54px;
+      }
+      .num{
+        font-size: 20px;
+        font-weight: 600;
+        color: $primary-200;
+        margin-top: 8px;
+      }
+      .column{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        .column-item{
+          width: 130px;
+          background: $primary-1100;
+          padding: 8px 12px;
+          border-radius: 4px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .info{
+            .info-title{
+              font-size: 12px;
+              text-align: left;
+              color: $primary-700;
+            }
+            .info-num{
+              font-size: 16px;
+              color: $primary-200;
+              margin-top: 8px;
+            }
+          }
+          img{
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+      .tips{
+        font-size: 10px;
+        color: $primary-900;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  .card{
+    background: $primary-1200;
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 8px;
+  }
 }
+
