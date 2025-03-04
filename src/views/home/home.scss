@@ -3,7 +3,6 @@
 p{
   margin: 0;
 }
-
 .home {
   font-family: "PingFang SC";
   width: 375px;
@@ -17,7 +16,7 @@ p{
   padding: 24px 16px;
   box-sizing: border-box;
   .home-market{
-    .market-trend{
+    .trend{
       .market-info{
         display: flex;
         .info-l{
@@ -85,7 +84,7 @@ p{
         height: 216px;
       }
     }
-    .market-cell{
+    .cell{
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -108,7 +107,7 @@ p{
         color: $primary-200;
       }
     }
-    .market-stat{
+    .stat{
       text-align: center;
       img{
         width: 84px;
@@ -156,13 +155,109 @@ p{
         margin-top: 16px;
       }
     }
+    .card{
+      background: $primary-1200;
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: 8px;
+    }
   }
-
-  .card{
-    background: $primary-1200;
-    margin-top: 12px;
-    padding: 12px;
-    border-radius: 8px;
+  .home-machine{
+    .table{
+      margin-top: 24px;
+      .table-title{
+        color: $primary-500;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .table-wrapper{
+        margin-top: 16px;
+        padding: 0 12px;
+        background: $primary-1100;
+        border-radius: 8px;
+        .table-label{
+          display: flex;
+          p{
+            flex: 1;
+            text-align: center;
+            font-size: 12px;
+            color: $primary-800;
+            line-height: 12px;
+            padding: 8px 0;
+          }
+        }
+        .table-item{
+          display: flex;
+          p{
+            flex: 1;
+            text-align: center;
+            font-size: 12px;
+            color: $primary-500;
+            line-height: 24px;
+            padding: 8px 0;
+          }
+        }
+        .align-l{
+          text-align: left!important;
+        }
+        .align-r{
+          text-align: right!important;
+        }
+      }
+    }
+  }
+  .home-jackpot{
+    .cell{
+      margin-top: 12px;
+      .cell-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+        margin-bottom: 16px;
+        .title{
+          color: $primary-500;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .num{
+          color: $primary-700;
+          font-size: 10px;
+          padding: 0 8px;
+          border: 1px solid $primary-800;
+          border-radius: 40px;
+        }
+      }
+      .cell-main{
+        height: 38px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: 8px;
+        margin-top: 8px;
+        background: $primary-1100;
+        .title{
+          color: $primary-700;
+          font-size: 12px;
+        }
+        .main-box{
+          .num{
+            color: $primary-200;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: right;
+            line-height: 20px;
+          }
+          .des{
+            color: $primary-800;
+            font-size: 12px;
+            text-align: right;
+            line-height: 20px;
+          }
+        }
+      }
+    }
   }
 }
 

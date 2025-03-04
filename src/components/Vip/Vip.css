@@ -1,0 +1,70 @@
+.vip{
+  box-sizing: border-box;
+  width: 100%;
+  /*height: 100px;*/
+  border-radius: 8px;
+  background: linear-gradient(72deg, #4A2A11 30.58%, #C08D6F 62.06%, #55331A 91.83%);
+  padding: 12px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  .vip-info{
+    width: 192px;
+    .info-head{
+      .title{
+        font-size: 12px;
+        color: #E8C5AE;
+      }
+      .grade{
+        width: 121px;
+        height: 25px;
+        margin-top: 8px;
+      }
+    }
+    .info-bottom{
+      margin-top: 24px;
+      .exp{
+        font-family: "PingFang SC";
+        font-size: 11px;
+        display: flex;
+        justify-content: space-between;
+        .title{
+          color: #B59988;
+          span{
+            display: inline-block;
+            width: 15px;
+            line-height: 11px;
+            color: #332F2C;
+            font-family: "Racing Sans One";
+            font-size: 11px;
+            background: #FFD8BF;
+            margin-left: 4px;
+            padding: 2px 4px;
+            border-radius: 40px;
+          }
+        }
+        .num{
+          font-size: 11px;
+          color: #B59988;
+          span{
+            color: #FFE5D4;
+          }
+        }
+      }
+      .progress{
+        margin-top: 8px;
+      }
+    }
+  }
+  .logo{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: 12px;
+    bottom: 0;
+  }
+}
+p{
+  margin: 0;
+}
