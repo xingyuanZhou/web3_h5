@@ -8,7 +8,12 @@ const handleTabsChange = (tab) => {
   active.value = tab;
 }
 
-const total = ref();
+const basicNum = ref();
+const speedNum = ref();
+const speedNumList = ref([100, 200, 400, 600, 800]);
+const handleSpeedChange = (value) => {
+  speedNum.value = value;
+}
 
 </script>
 <template>
@@ -27,7 +32,7 @@ const total = ref();
     <!-- 基础算力 -->
     <div class="basics" v-if="active === 0">
       <div class="basics-input">
-        <van-field v-model="total" type="digit" placeholder="请输入数量">
+        <van-field v-model="basicNum" type="digit" placeholder="请输入数量">
           <template #button>
             <p class="input-icon">
               <img src="../../assets/images/power/icon_04.png" alt="">
@@ -51,7 +56,7 @@ const total = ref();
           <p class="num">可用：21.34242 ETS</p>
         </div>
         <div class="input-main">
-          <van-field v-model="total" type="digit" placeholder="请输入质押数量" input-align="right">
+          <van-field v-model="speedNum" type="digit" placeholder="请输入质押数量" input-align="right">
             <template #label>
               <p class="input-label">
                 <img class="logo" src="../../assets/images/power/icon_05.png" alt="">
@@ -62,11 +67,7 @@ const total = ref();
           </van-field>
         </div>
         <div class="input-foot">
-          <div class="num">100</div>
-          <div class="num">200</div>
-          <div class="num">400</div>
-          <div class="num">600</div>
-          <div class="num">800</div>
+          <div class="num" v-for="value in speedNumList" @click="handleSpeedChange(value)">{{ value }}</div>
         </div>
       </div>
       <div class="speed-tips">
