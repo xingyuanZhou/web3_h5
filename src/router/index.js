@@ -7,7 +7,7 @@ const router = createRouter({
     {
       path: "/",
       component: Tabbar,
-      redirect: '/home',
+      redirect: '/power',
       children: [
         {
           path: "/home",
