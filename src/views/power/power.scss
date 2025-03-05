@@ -170,6 +170,7 @@
         display: flex;
         justify-content: space-between;
         .num{
+          line-height: 16px;
           font-size: 12px;
           color: $primary-300;
           padding: 4px 12px;
