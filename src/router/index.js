@@ -18,6 +18,10 @@ const router = createRouter({
           component: () => import("@/views/power/power.vue"),
         },
         {
+          path: "/power/position",
+          component: () => import("@/views/power/position.vue"),
+        },
+        {
           path: "/profit",
           component: () => import("@/views/profit/profit.vue"),
         },
