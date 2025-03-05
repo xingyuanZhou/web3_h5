@@ -101,6 +101,17 @@
       color: $primary-900;
       font-size: 10px;
     }
+    :deep(.van-cell) {
+      background: $primary-1200;
+      padding: 0;
+    }
+    :deep(.van-field__control) {
+      color: $primary-200;
+    }
+    :deep(.van-field__control::placeholder) {
+      color: $primary-700;
+      font-size: 14px;
+    }
   }
   .speed{
     width: 100%;
@@ -121,7 +132,99 @@
           color: $primary-700;
         }
       }
+      .input-main{
+        padding: 20px 0;
+        .input-label{
+          display: flex;
+          align-items: center;
+          font-size: 18px;
+          font-weight: 600;
+          color: $primary-50;
+          .logo{
+            width: 24px;
+            height: 24px;
+          }
+          .text{
+            padding: 0 4px 0 8px;
+          }
+          .arrow-down{
+            width: 16px;
+            height: 16px;
+          }
+        }
 
+        :deep(.van-cell) {
+          background: $primary-1200;
+          padding: 0;
+        }
+        :deep(.van-field__control) {
+          color: $primary-200;
+        }
+        :deep(.van-field__control::placeholder) {
+          color: $primary-700;
+          font-size: 20px;
+          //text-align: right;
+        }
+      }
+      .input-foot{
+        display: flex;
+        justify-content: space-between;
+        .num{
+          font-size: 12px;
+          color: $primary-300;
+          padding: 4px 12px;
+          border: 1px solid $primary-900;
+          border-radius: 40px;
+          &:active{
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+    .speed-tips{
+      margin-top: 12px;
+      display: flex;
+      justify-content: space-between;
+      .label{
+        font-size: 12px;
+        color: $primary-700;
+      }
+      .num{
+        font-size: 12px;
+        color: $primary-500;
+      }
+    }
+    .speed-button{
+      margin-top: 14px;
+      margin-bottom: 16px;
+      color: $primary-1200!important;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .column{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    .column-l, .column-r{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 142px;
+      height: 42px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: $primary-1200;
+      .label{
+        font-size: 12px;
+        color: $primary-700;
+      }
+      .num{
+        font-size: 14px;
+        color: $primary-200;
+      }
     }
   }
   .links{
@@ -154,15 +257,4 @@
 
 p{
   margin: 0;
-}
-.van-cell{
-  background: $primary-1200;
-  padding: 0;
-}
-::v-deep .van-field__control{
-  color: $primary-200;
-}
-::v-deep .van-field__control::placeholder {
-  color: $primary-700;
-  font-size: 14px;
 }
