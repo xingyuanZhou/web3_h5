@@ -27,6 +27,10 @@ const router = createRouter({
         },
       ],
     },
+    {
+      path: "/trans",
+      component: () => import("@/views/trans/trans.vue"),
+    },
   ],
 });
 

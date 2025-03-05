@@ -7,7 +7,10 @@ import { Progress } from 'vant';
     <div class="vip-info">
       <div class="info-head">
         <p class="title">矿机当前等级</p>
-        <img class="grade" src="../../assets/images/home/icon_12.png" alt="">
+        <div class="speed">
+          V1
+          <div>Speed 1</div>
+        </div>
       </div>
       <div class="info-bottom">
         <div class="exp">

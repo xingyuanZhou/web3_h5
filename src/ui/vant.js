@@ -8,14 +8,8 @@ import {
   Icon,
   Tab,
   Tabs,
-  Swipe,
-  SwipeItem,
   Dialog,
   Popup,
-  Sidebar,
-  SidebarItem,
-  Grid,
-  GridItem,
   Field,
   CellGroup,
   Pagination,
@@ -27,6 +21,8 @@ import {
   CountDown,
   Picker,
   ActionSheet,
+  FloatingPanel,
+  Checkbox,
 } from "vant";
 // 2. 引入组件样式
 import 'vant/lib/index.css';
@@ -42,12 +38,8 @@ const vant = {
     Vue.use(Icon);
     Vue.use(Tab);
     Vue.use(Tabs);
-    Vue.use(Swipe);
-    Vue.use(SwipeItem);
     Vue.use(Dialog);
     Vue.use(Popup);
-    Vue.use(Sidebar);
-    Vue.use(SidebarItem);
     Vue.use(Field);
     Vue.use(CellGroup);
     Vue.use(Pagination);
@@ -59,6 +51,8 @@ const vant = {
     Vue.use(CountDown);
     Vue.use(Picker);
     Vue.use(ActionSheet);
+    Vue.use(FloatingPanel);
+    Vue.use(Checkbox)
   },
 };
 

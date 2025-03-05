@@ -173,7 +173,7 @@ const active = ref(0);
           <Vip/>
           <div class="cell">
             <div class="cell-head">
-              <p class="title">ETS数量</p>
+              <p class="title">流动性池</p>
               <p class="num">70%U进入ESWAP</p>
             </div>
             <div class="cell-main">

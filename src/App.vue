@@ -8,6 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+@import "@/assets/fonts/font.css";
 header {
   line-height: 1.5;
   max-height: 100vh;

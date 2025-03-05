@@ -1,6 +1,7 @@
 .recommend {
-  width: 375px;
+  width: 345px;
   height: calc(100vh - 87px);
+  padding: 0 15px;
   background-color: #191614;
   display: flex;
   justify-content: center;
@@ -8,4 +9,101 @@
   flex-wrap: wrap;
   overflow: scroll;
   color: #fff;
+  position: relative;
+  .title {
+    color: #FFD8BF;
+    font-size: 30px;
+    margin-top: 45px;
+    font-weight: 500;
+    line-height: 45px;
+    margin-bottom: 15px;
+    span {
+      color: #ffffff;
+    }
+  }
+  .info {
+    color: #B59988;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .participate {
+    width: 100%;
+    text-align: left;
+    color: #FFEDE2;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 20px;
+      height: 20px;
+      margin-top: 1px;
+    }
+  }
+  .bind {
+    width: 321px;
+    height: 158px;
+    background: #292522;
+    position: absolute;
+    bottom: 125px;
+    left: 15px;
+    border-radius: 8px;
+    padding: 12px;
+    .bind-title {
+      width: 100%;
+      text-align: center;
+      color: #B59988;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .bind-input {
+      width: 319px;
+      height: 48px;
+      border: 1px solid #B59988;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      color: #B59988;
+      background: transparent;
+      :deep(.van-field__control) {
+        color: #FFE5D4;
+      }
+      :deep(.van-field__control::-webkit-input-placeholder) {
+        color: #B59988;
+      }
+    }
+    .bind-btn {
+      width: 321px;
+      height: 44px;
+      background: #FFE5D4;
+      border-radius: 8px;
+      font-size: 16px;
+      color: #292522;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .code {
+    width: 321px;
+    height: 50px;
+    background: #292522;
+    position: absolute;
+    bottom: 50px;
+    left: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #B59988;
+    .code-v {
+      font-size: 20px;
+      color: #FFEDE2;
+      img {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+      }
+    }
+  }
 }
