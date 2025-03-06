@@ -11,6 +11,8 @@ const index = ref(2)
 function changeIndex(val,text,icon1,icon2) {
   index.value = val
 }
+
+const time = ref(30 * 60 * 60 * 1000);
 </script>
 <template>
   <div class="position">
@@ -69,7 +71,7 @@ function changeIndex(val,text,icon1,icon2) {
         <div class="card-foot">
           <div class="time">
             <img src="../../assets/images/power/icon_10.png" alt="">
-            7 时 32 分 04 秒
+            <van-count-down :time="time" format="HH 时 mm 分 ss 秒" />
           </div>
         </div>
       </div>

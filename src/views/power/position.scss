@@ -203,6 +203,11 @@ p{
             height: 16px;
             margin-right: 6px;
           }
+          :deep(.van-count-down){
+            color: $primary-700;
+            font-size: 14px;
+            font-weight: 500;
+          }
         }
         :deep(.van-button--plain){
           background: transparent;
