@@ -4,17 +4,19 @@ import ETS2 from '@/assets/img/ets2.png'
 import USDT from '@/assets/img/t.png'
 import {ref, computed} from "vue";
 import { useToggle } from '@vant/use';
+import Panel from '@/components/Panel/Panel.vue'
 
-const icon1 = ref(ETS2)
-const icon2 = ref(ETS1)
 const option = [
   { text: 'ETS', value: 0, icon: ETS2 },
   { text: 'ETS1', value: 1, icon: ETS1 },
   { text: 'USDT', value: 2, icon: USDT },
 ];
+const icon1 = ref(option[0].icon)
 const text1 = ref(option[0].text);
+const icon2 = ref(option[1].icon)
 const text2 = ref(option[1].text);
 const [state, toggle] = useToggle();
+//判断对应哪一个下拉选择  key=1 对应 第一个; key=2 对应 第二个
 const key = ref(1)
 function showPanel(i) {
   toggle(!state.value)
@@ -77,13 +79,13 @@ const checked = ref(false);
       <div>0.1%</div>
     </div>
     <div class="btn" @click="showDialog = !showDialog">确认兑换</div>
-    <van-floating-panel v-if="state" :height="540">
-      <div class="panel-title">选择币种</div>
-      <div class="panel-content" v-for="i in option" :key="i.value" @click="changePanel(i)">
-        <div>{{i.text}}</div>
-        <img src="@/assets/img/check.png" alt="" v-show="(key === 1 && i.text === text1) || (key === 2 &&i.text === text2)">
-      </div>
-    </van-floating-panel>
+    <Panel
+        :title="'选择币种'"
+        :option="option"
+        :changePanel="changePanel"
+        :state="state"
+        :text="key === 1 ? text1 : text2"
+    />
     <van-dialog v-model:show="showDialog" :showConfirmButton="false" closeOnClickOverlay>
       <div class="dialog">
         <div class="dialog-label">您确认对BTC USDT永续 卖</div>
