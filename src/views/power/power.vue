@@ -58,11 +58,11 @@ const handleSpeedChange = (value) => {
         <div class="input-main">
           <van-field v-model="speedNum" type="digit" placeholder="请输入质押数量" input-align="right">
             <template #label>
-              <p class="input-label">
+              <div class="input-label">
                 <img class="logo" src="../../assets/images/power/icon_05.png" alt="">
                 <p class="text">EUSD</p>
                 <img class="arrow-down" src="../../assets/images/power/icon_06.png" alt="">
-              </p>
+              </div>
             </template>
           </van-field>
         </div>
